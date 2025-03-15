@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	background-color: #4D55CC;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container2 {
+  background-color: #B5A8D5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.dekorasi1 {
+	width: 150px;
+	position: absolute;
+	z-index: 99;
+	top: -50px;
+	left: -50px;
+}
+
+.dekorasi2 {
+	width: 150px;
+	position: absolute;
+	z-index: 99;
+	bottom: -50px;
+	right: -100px;
+}
+
+h1 {
+	color: #211C84;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+th, td {
+  padding: 20px;  /* Menambahkan ruang di dalam sel */
+  text-align: left; /* Menyusun teks ke kiri */
+  border: 1px solid #ddd; /* Border tipis di sekitar sel */
+}
+
+th {
+  background-color: #f2f2f2; /* Latar belakang warna abu-abu muda untuk header */
+}
+
+tr:hover {
+  background-color: #4D55CC; /* Efek hover saat melayang di atas baris */
+}
