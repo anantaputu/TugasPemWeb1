@@ -1,1 +1,1 @@
-Project sederhana menggunakan HTML, CSS, dan Javascript
+Project sederhana menggunakan HTML dan CSS
