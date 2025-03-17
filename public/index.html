@@ -5,18 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LATIHAN HTML PEMWEB</title>
     <link rel="stylesheet" href="../src/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="form">
-        <h1>Password!!!</h1>
-        <form action="/submit" method="post" id="loginForm">
-          <input type="text" name="qwerty" id="qwerty" placeholder="Kata Kunci Anggota Kelas">
-          <input type="submit" value="Submit" class="tombolSubmit">
+
+    <!-- Bagian Header Section -->
+    <header id="home">
+      <div class="container1">
+        <img src="../src/assets/img/logo.png" alt="ini logo" class="logo">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Bagian Main/Hero Section -->
+    <main>
+      <div class="container2">
+        <h1>Welcome to Our Website</h1>
+        <p>You can see what we do for the last six year.</p>
+
+        <a href="nextpage.html">
+          <div class="button">
+            See It  
+          </div>
+        </a>
+
+      </div>
+    </main>
+
+    <!-- Bagian About Me -->
+    <section class="about" id="about">
+      <div class="container3">
+        <h2>About Us</h2>
+        <p>Kami berempat adalah mahasiswa teknik informatika fakultas teknik universitas mataram yang telah menyelesaikan projek mata kuliah sistem informasi dengan judul projeknya adalah SIAGOSIS (Sistem Informasi Guru, Orang Tua, dan Siswa) yang diketuai oleh Zainul Majdi. Latar belakang mengapa kami ingin menciptakan sistem informasi ini adalah berawal dari keresahan kami tentang banyaknya kasus dimana banyak siswa-siswi dibeberapa sekolah khususnya di Lombok melakukan aksi bolos sekolah dan keresahan orang tua yang tidak mendapatkan transparansi nilai anak didiknya.</p>
+      </div>
+      <div class="container3">
+        <img src="../src/assets/img/aboutus.png" alt="Foto Saya">
+      </div>
+    </section>
+
+    <!-- Bagian Contact -->
+    <section class="contact" id="contact">
+      <div class="container4">
+        <h2>Contact Me</h2>
+        <form action="../src/form.php" method="post">
+          <input type="text" id="nama" name="nama" placeholder="Nama">
+          <input type="text" id="nohp" name="nohp" placeholder="Nomor Handphone">
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
         </form>
       </div>
-    </div>
-
-    <script src="../src/script.js"></script>
+    </section>
   </body>
 </html>

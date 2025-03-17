@@ -1,17 +1,49 @@
 body {
 	margin: 0;
-	background-color: #4D55CC;
+	background-color: whitesmoke;
 }
 
+/* Header Section */
+header {
+  background-color: #99BC85;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.container1 nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.container1 nav ul li {
+  margin-left: 2rem;
+}
+
+.container1 nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Table Section */
 .container {
   	display: flex;
   	justify-content: center;
   	align-items: center;
-  	height: 100vh;
+  	height: 90vh;
 }
 
 .container2 {
-  	background-color: #B5A8D5;
+  	background-color: #99BC85;
   	padding: 20px;
   	border-radius: 8px;
   	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -47,59 +79,28 @@ table {
 }
 
 th, td {
-  	padding: 20px;  /* Menambahkan ruang di dalam sel */
-  	text-align: left; /* Menyusun teks ke kiri */
-  	border: 1px solid #ddd; /* Border tipis di sekitar sel */
+  	padding: 20px;
+  	text-align: left;
+  	border: 1px solid #ddd;
 }
 
 th {
-  	background-color: #f2f2f2; /* Latar belakang warna abu-abu muda untuk header */
+  	background-color: #f2f2f2;
 }
 
 tr:hover {
-  	background-color: #4D55CC; /* Efek hover saat melayang di atas baris */
-}
-
-@media (max-width: 768px) {
-  	.container2 {
-    	width: 90%;
-    	padding: 15px;
-  	}
-
-  	.dekorasi1 {
-		width: 90px;
-		position: absolute;
-		z-index: 99;
-		top: -25px;
-		left: -25px;
-	}
-
-	.dekorasi2 {
-		width: 90px;
-		position: absolute;
-		z-index: 99;
-		bottom: -50px;
-		right: 0px;
-	}
-
-	table {
-	 	font-size: 7pt;
-	}
-
-  	h1 {
-    	font-size: 24px;
-  	}
-
-  	input {
-    	padding: 8px;
-  	}
-
-  	input[type="submit"] {
-    	font-size: 12pt;
-  	}
+  	background-color: whitesmoke;
 }
 
 @media (max-width: 480px) {
+ 	.container1 nav ul li a {
+    	font-size: 0.7rem;
+  	}
+
+  	.container1 nav ul li {
+    	margin-left: 1rem;
+  	}
+
   	.container2 {
    		width: 90%;
     	padding: 10px;
