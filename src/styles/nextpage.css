@@ -5,6 +5,8 @@ body {
 
 /* Header Section */
 header {
+	position: sticky;
+  top: 0;
   background-color: #99BC85;
 }
 
@@ -36,20 +38,20 @@ header {
 
 /* Table Section */
 .container {
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 .container2 {
-  	background-color: #99BC85;
-  	padding: 20px;
-  	border-radius: 8px;
-  	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  	width: 500px;
-  	text-align: center;
-  	position: relative;
+  background-color: #99BC85;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+  position: relative;
 }
 
 .dekorasi1 {
@@ -73,40 +75,42 @@ h1 {
 }
 
 table {
-  	width: 100%;
-  	border-collapse: collapse;
-  	font-size: 10pt;
+  width: 100%;
+ 	border-collapse: collapse;
+ 	font-size: 10pt;
 }
 
 th, td {
-  	padding: 20px;
-  	text-align: left;
-  	border: 1px solid #ddd;
+ 	padding: 20px;
+ 	text-align: left;
+ 	border: 1px solid #ddd;
 }
 
 th {
-  	background-color: #f2f2f2;
+ 	background-color: #f2f2f2;
 }
 
 tr:hover {
-  	background-color: whitesmoke;
+ 	background-color: whitesmoke;
 }
+
+/* Media Query Max 480px */
 
 @media (max-width: 480px) {
  	.container1 nav ul li a {
-    	font-size: 0.7rem;
-  	}
+  	font-size: 0.7rem;
+  }
 
-  	.container1 nav ul li {
-    	margin-left: 1rem;
-  	}
+	.container1 nav ul li {
+  	margin-left: 1rem;
+	}
 
-  	.container2 {
-   		width: 90%;
-    	padding: 10px;
-  	}
+	.container2 {
+ 		width: 90%;
+  	padding: 10px;
+	}
 
-  	.dekorasi1 {
+	.dekorasi1 {
 		width: 90px;
 		position: absolute;
 		z-index: 99;
@@ -127,14 +131,129 @@ tr:hover {
 	}
 
 	h1 {
-	    font-size: 20px;
+    font-size: 20px;
+	}
+}
+
+/* Media Query Max 767px and Min 480px */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+ 	.container1 nav ul li a {
+  	font-size: 1.2rem;
 	}
 
-	input {
-	    padding: 8px;
+	.container1 nav ul li {
+  	margin-left: 1rem;
 	}
 
-	input[type="submit"] {
-	    font-size: 10pt;
+	.container2 {
+ 		width: 90%;
+  	padding: 10px;
+	}
+
+	.dekorasi1 {
+		width: 90px;
+		position: absolute;
+		z-index: 99;
+		top: -25px;
+		left: -25px;
+	}
+
+	.dekorasi2 {
+		width: 90px;
+		position: absolute;
+		z-index: 99;
+		bottom: -50px;
+		right: 0px;
+	}
+
+	table {
+	 	font-size: 10pt;
+	}
+
+	h1 {
+    font-size: 20px;
+	}
+}
+
+/* Media Query Max 1023px and Min 768px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+ 	.container1 nav ul li a {
+  	font-size: 1.5rem;
+	}
+
+	.container1 nav ul li {
+  	margin-left: 1rem;
+	}
+
+	.container2 {
+ 		width: 90%;
+  	padding: 10px;
+	}
+
+	.dekorasi1 {
+		width: 90px;
+		position: absolute;
+		z-index: 99;
+		top: -25px;
+		left: -25px;
+	}
+
+	.dekorasi2 {
+		width: 90px;
+		position: absolute;
+		z-index: 99;
+		bottom: -50px;
+		right: 0px;
+	}
+
+	table {
+	 	font-size: 15pt;
+	}
+
+	h1 {
+    font-size: 30px;
+	}
+}
+
+/* Media Query Max 1279px and Min 1024x */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+ 	.container1 nav ul li a {
+  	font-size: 2rem;
+	}
+
+	.container1 nav ul li {
+  	margin-left: 1rem;
+	}
+
+	.container2 {
+ 		width: 90%;
+  	padding: 10px;
+	}
+
+	.dekorasi1 {
+		width: 90px;
+		position: absolute;
+		z-index: 99;
+		top: -25px;
+		left: -25px;
+	}
+
+	.dekorasi2 {
+		width: 90px;
+		position: absolute;
+		z-index: 99;
+		bottom: -50px;
+		right: 0px;
+	}
+
+	table {
+	 	font-size: 18pt;
+	}
+
+	h1 {
+    font-size: 30px;
 	}
 }
