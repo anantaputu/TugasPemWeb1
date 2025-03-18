@@ -86,6 +86,10 @@ main {
   width: 500px;
 }
 
+.container3 p {
+  text-align: justify;
+}
+
 .container3 img {
   width: 500px;
 }
@@ -353,6 +357,7 @@ main {
   }
 
   .container3 p {
+    text-align: justify;
     font-size: 1.5rem;
   }
 
